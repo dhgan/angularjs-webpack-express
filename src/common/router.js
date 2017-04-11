@@ -2,10 +2,10 @@ var app = require('./app.js');
 //require('./commonServer.js');
 
 // 设置angular路由
-app.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationPorvider) {
+app.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
 
 	// 将!#弄成#
-	$locationPorvider.hashPrefix('');
+	$locationProvider.hashPrefix('');
 
 	$stateProvider
 	.state('index', {
